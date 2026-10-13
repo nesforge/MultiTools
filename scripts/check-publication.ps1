@@ -38,5 +38,8 @@ try {
         }
     }
     if ($problems.Count) { $problems | Write-Output; throw 'La revisión encontró archivos que requieren inspección.' }
+    # git check-ignore returns 1 for the normal case (the file is not ignored).
+    # Clear that expected native exit code so callers can rely on this checker's result.
+    $global:LASTEXITCODE = 0
     Write-Output "$($files.Count) archivos revisados: sin coincidencias en los patrones configurados. Revisar también el diff y los binarios."
 } finally { Pop-Location }
