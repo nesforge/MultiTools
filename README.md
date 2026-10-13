@@ -8,6 +8,12 @@ solo necesita `MiniTools.exe`: incluye el runtime, no requiere Python, instalar
 .NET ni permisos de administrador para uso normal. El runtime puede extraer
 componentes en una carpeta temporal del usuario.
 
+[⬇️ Descargar MiniTools para Windows (64 bits)](https://github.com/nesforge/MultiTools/releases/latest/download/MiniTools.exe)
+
+El enlace descarga directamente el `.exe` de la última versión publicada; no hace
+falta descargar ni clonar el repositorio. Si todavía no hay una versión publicada,
+consulta las [versiones de MiniTools](https://github.com/nesforge/MultiTools/releases).
+
 ![AutoClick con datos de demostración](docs/screenshots/autoclick.png)
 
 ## Funciones
