@@ -31,5 +31,8 @@ try {
     $blocked = $false
     try { & ./scripts/check-publication.ps1 | Out-Null } catch { $blocked = $true }
     if (-not $blocked) { throw 'Un archivo ignorado pero rastreado no fue bloqueado.' }
+    # El caso negativo esperado puede dejar el código nativo de Git en 1.
+    # Al completar todas las aserciones, limpia ese estado para los runners de PowerShell.
+    $global:LASTEXITCODE = 0
     Write-Output 'PASS: control de publicación verifica contenido real del índice, detecta token ficticio y bloquea .env rastreado.'
 } finally { Pop-Location }
