@@ -1,0 +1,43 @@
+**/bin/
+**/obj/
+.dotnet-home/
+dist/
+TestResults/
+# Local settings, recordings, credentials and developer state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.user
+*.suo
+.vs/
+.idea/
+.codex/
+.agents/
+.aws/
+*.log
+*.tmp
+*.bak
+*.zip
+*.exe
+settings.json
+automation-settings.json
+grabacion*.json
+macros/
+# Raw reports and historical internal documentation stay on disk
+/*Results.txt
+/docs/PackagingResults-*.txt
+/docs/SKILLS-Y-COMPLEMENTOS.md
+/docs/INTEGRACION-BRIOCRAFT.md
+/docs/CORRECCION-IDENTIDAD.md
+/docs/ARQUITECTURA.md
+/docs/PRUEBAS.md
+/docs/OPTIMIZACION.md
+/docs/internal/
+# Unused branding references are not required by the build
+/assets/briocraft/
+/assets/minitools-logo.png
+/assets/minitools.ico

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "kind": "Macro",
+  "name": "Ejemplo de esperas",
+  "steps": [
+    { "kind": "Wait", "delayMs": 500 },
+    { "kind": "Wait", "delayMs": 1000 }
+  ]
+}
